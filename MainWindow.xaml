@@ -1,0 +1,27 @@
+﻿<Window x:Class="Cia_Decrypt.MainWindow"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cia_Decrypt"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="800">
+    <Grid>
+        <Menu Name="mnuMain" VerticalAlignment="Top" Height="25">
+            <MenuItem Name="muFile" Header="File">
+                <MenuItem Name="muOpen" Header="Open" Click="muOpen_Click">
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+        <!--IMage-->
+        <Border BorderBrush="Black" BorderThickness="3" HorizontalAlignment="Left" Height="231" Margin="65,61,0,0" VerticalAlignment="Top" Width="234"/>
+        <Image Name="imgMain"  RenderOptions.BitmapScalingMode ="NearestNeighbor" HorizontalAlignment="Left" Width="234" Height="231" Margin="65,61,0,0" VerticalAlignment="Top"/>
+        <Button Name="btnDecode" Content="Decode" HorizontalAlignment="Left" Margin="345,404,0,0" VerticalAlignment="Top" Width="86" Click="btndecode_Click"/>
+        <TextBox Name ="txtBoxMessage" HorizontalAlignment="Left" Margin="461,68,0,0" TextWrapping="Wrap" Text="Waiting for decryption" VerticalAlignment="Top" Width="268" Height="216"/>
+        <Border BorderBrush="Black" BorderThickness="3" HorizontalAlignment="Left" Height="216" Margin="461,68,0,0" VerticalAlignment="Top" Width="268"/>
+        <Label Name ="lblError" Content="" HorizontalAlignment="Left" Margin="332,429,0,0" VerticalAlignment="Top" Width="304"/>
+    </Grid>
+</Window>
+
+
+      
